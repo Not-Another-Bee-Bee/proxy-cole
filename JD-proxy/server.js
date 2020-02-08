@@ -12,7 +12,7 @@ app.use(express.static('public'));
 
 
 app.get('/seed', (req, res) => {
-  axios.get('http://jdservice:3003/seed')
+  axios.get('http://18.223.108.8:3003/seed')
     .then(response => {
       res.send(response.data);
     })
