@@ -10,6 +10,9 @@ services:
 
   jdproxy:
     build: JD-proxy/
+    depends_on:
+      - 'database'
+      - 'jdservice'
     ports:
       - '3000:3000'
 
