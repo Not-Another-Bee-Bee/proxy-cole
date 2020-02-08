@@ -11,10 +11,10 @@ WORKDIR /src/app
 COPY . /src/app
 
 # Does your app have any dependencies that should be installed?
-RUN npm install
-
+RUN yarn install --ignore-engines
+RUN yarn global add nodemon
 # What port will the container talk to the outside world with once created?
 EXPOSE 3000
 
 # How do you start your app?
-CMD [ "/npm", "run", "startdev" ]
+CMD [ "npm", "run", "start" ]

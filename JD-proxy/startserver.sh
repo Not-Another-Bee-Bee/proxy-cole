@@ -1,6 +1,6 @@
 #! /bin/bash
 
-cd JD-service
+cd ../JD-service
 npm run start &
 npm run webpack & 
 
@@ -14,5 +14,5 @@ cd ../AK-service
 npm run seedDB &
 npm run server &
 
-cd ../
+cd ../JD-proxy
 npm run start &
