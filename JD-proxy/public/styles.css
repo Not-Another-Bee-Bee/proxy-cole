@@ -1,5 +1,12 @@
 .main {
   display: flex;
-  flex-direction: row;
-  justify-content: space-around;
+  justify-content: center;
+}
+
+#Photos {
+  display: inline-block;
+}
+
+#summary {
+  display: inline-block;
 }
