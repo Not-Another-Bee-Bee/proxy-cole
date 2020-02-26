@@ -28,6 +28,7 @@ app.get('/listings/:listingID', (req, res) => {
 
 
 app.get('/bundle.js', (req, res) => {
+  console.log("getting");
   axios.get(`http://13.57.25.65:3001/bundle.js`)
   .then(response => {
   console.log(response);
