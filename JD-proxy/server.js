@@ -27,6 +27,19 @@ app.get('/listings/:listingID', (req, res) => {
 });
 
 
+app.get('/bundle.js', (req, res) => {
+  axios.get(`http://13.57.25.65:3001:3000/bundle.js`)
+  .then(response => {
+  
+    res.send(response.data);
+  })
+  .catch(err => {
+    console.log(err)
+  })
+});
+
+
+
 // app.get('/seed', (req, res) => {
 //   axios.get('http://localhost:3003/seed')
 //     .then(response => {
