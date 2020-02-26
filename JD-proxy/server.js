@@ -29,13 +29,14 @@ app.get('/listings/:listingID', (req, res) => {
 
 app.get('/bundle.js', (req, res) => {
   console.log("getting");
-  axios.get(`http://13.57.25.65:3001/bundle.js`)
+  axios.get(`http://13.52.78.114:3001/bundle.js`)
   .then(response => {
   console.log(response);
     res.send(response.data);
   })
   .catch(err => {
     console.log(err)
+    res.sendStatus(500)
   })
 });
 
