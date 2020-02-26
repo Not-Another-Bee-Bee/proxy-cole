@@ -16,7 +16,7 @@ app.use(express.static('public'));
 
 app.get('/listings/:listingID', (req, res) => {
   const id  = req.params.listingID
-  axios.get(`http://localhost:3001/listings/${id}`)
+  axios.get(`13.52.78.114:3001/listings/${id}`)
   .then(response => {
   
     res.send(response.data);
